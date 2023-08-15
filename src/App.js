@@ -8,6 +8,7 @@ import SignupPage from './pages/SignupPage';
 import PrivateRoute from './pages/PrivateRoute';
 import './index.css';
 import TaxCalculator from './components/Tax/TaxCalculator/TaxCalculator';
+import GstCalculator from './components/Gst/GstCalculator/GstCalculator';
 import IncomeCounter from './components/Income/IncomeCounter/IncomeCounter';
 import BudgetPlanner from './components/Budget/BudgetPlanner/BudgetPlanner';
 import ExpenseTracker from './components/Expense/ExpenseTracker/ExpenseTracker';
@@ -58,6 +59,16 @@ function App() {
             <PrivateRoute>
               <MainPage>
                 <TaxCalculator />
+              </MainPage>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/gst-calculator"
+          element={
+            <PrivateRoute>
+              <MainPage>
+                <GstCalculator />
               </MainPage>
             </PrivateRoute>
           }

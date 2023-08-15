@@ -1,0 +1,33 @@
+.form {
+  background: white;
+  padding: 32px;
+  box-shadow: -24px 0px 80px rgba(49, 79, 124, 0.02);
+  border-radius: 12px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+
+  color: #3f4765;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tax {
+  font-size: 28px;
+}
+
+.totalTax,
+.income {
+  font-size: 32px;
+}
+
+.totalTax {
+  color: #f85842;
+}
+
+.income {
+  color: #2e8b43;
+}

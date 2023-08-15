@@ -44,7 +44,7 @@ const Login = () => {
 
   return (
     <div className={styles.main}>
-      <div className={styles.popup}>
+      <div style={{display: 'none'}} className={styles.popup}>
         <p>Hi, thanks for visiting this app!👋</p>
         <br></br> If you want to try all the functionality you can create an
         account with any fake email Or you can use these details

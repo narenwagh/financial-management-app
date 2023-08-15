@@ -64,6 +64,12 @@ const SideBar = ({ setSideMenu, sideMenu }) => {
               label="Tax Calculator"
               onClick={onClick}
             />
+             <SideItem
+              to="/gst-calculator"
+              icon={MenuIcon2}
+              label="GST Calculator"
+              onClick={onClick}
+            />
             <SideItem
               to="/budget-planner"
               icon={MenuIcon}

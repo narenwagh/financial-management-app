@@ -4,7 +4,7 @@ import { useAuth } from '../../../contexts/AuthContext';
 
 const Header = ({ setSideMenu, sideMenu }) => {
   const { currentUser } = useAuth();
-  const [greetings, setGreetings] = useState('Hello');
+  const [greetings, setGreetings] = useState('');
 
   const today = new Date();
   const currentTime = today.getHours();
@@ -14,6 +14,7 @@ const Header = ({ setSideMenu, sideMenu }) => {
   };
 
   useEffect(() => {
+    /*
     if (currentTime >= 0 && currentTime < 5) {
       setGreetings('Good night');
     } else if (currentTime >= 5 && currentTime < 12) {
@@ -23,6 +24,7 @@ const Header = ({ setSideMenu, sideMenu }) => {
     } else {
       setGreetings('Good evening');
     }
+    */
   }, [currentTime]);
 
   return (
@@ -37,9 +39,9 @@ const Header = ({ setSideMenu, sideMenu }) => {
         {' '}
         {`${greetings}${
           currentUser.displayName !== null
-            ? `, ${currentUser.displayName}`
-            : ', welcome to this app'
-        }!`}
+            ? ` ${currentUser.displayName}`
+            : ' Finance Planning'
+        }`}
       </h1>
     </header>
   );
